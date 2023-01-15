@@ -13,16 +13,20 @@ Short description for the organization
 
 ## Campaigns
 * Campaign 1
+
 Campaign 1 Desc
 
 * Campaign 2
+
 Campaign 2 Desc
 
 * Campaign 3
+
 Campaign 3 Desc
 
 ## Website Information
 * Colour Scheme
+
 Colours with hex code go here
 
 * Typography
