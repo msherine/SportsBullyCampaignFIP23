@@ -48,9 +48,7 @@ Typography name with link (ex. google font site link, in case)
 
 ### Development
 
-* Authoring Tools
-
-Vue, JavaScript, SASS, AJAX, PHP
+* Authoring Tools: Vue, JavaScript, SASS, AJAX, PHP
 
 ## References
 
