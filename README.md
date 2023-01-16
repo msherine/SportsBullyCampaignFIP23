@@ -56,6 +56,14 @@ Vue, JavaScript, SASS, AJAX, PHP
 
 Reference Sites go here.
 
+### Design
+* Pinterest (https://www.pinterest.ca/)
+* Behance (https://www.behance.net/)
+* Dribbble (https://dribbble.com/)
+
+### Development
+* Codepen (https://codepen.io/)
+
 ## MIT License
 Copyright 2023 Sherine McEween, Dianne Karla Trabuco, Seunghyeon Yeom, Alexander Lem and Zhihan Chen
 
