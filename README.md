@@ -3,9 +3,13 @@ Bullying In Sports
 
 ## Contributors & Roles
 Sherine McEween: Project Manager
+
 Dianne Karla Trabuco: Graphic Designer
+
 Seunghyeon Yeom: UI/UX Designer, Front-end Developer
+
 Alexander Lem: Back-end Developer
+
 Zhihan Chen: Motion Designer
 
 ## Organization Description
