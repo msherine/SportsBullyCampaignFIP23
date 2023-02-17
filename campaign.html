@@ -78,11 +78,11 @@
             <div class="banner_textBox">
                 <div class="bullying_taglines">
                     <h2>
-                        <span class="heading_text_span1">It's Not Football</span><br>
+                        <span class="heading_text_span1">It's Not Hockey</span><br>
                         But <span class="lightblue_text">It's</span> Still There
                     </h2>
                     
-                    <p>Elite swimmers routinely endure bullying, harassment and psychological abuse, more than 100 current and former athletes from more than a dozen countries.</p>
+                    <p>While we say hazing in locker rooms is an issue in Hockey. Swimming isn't immune.</p>
                 </div>
             </div>
         </section>
@@ -94,7 +94,11 @@
             <video src="./public/video/emerge_video.mp4" controls></video>
         </section>
 
-        <lightbox @closelb="this.showLightBox = false" v-if="showLightBox" :activity="lightboxData"></lightbox>
+        <lightbox 
+            @closelb="this.showLightBox = false" 
+            v-if="showLightBox" 
+            :activity="lightboxData">
+        </lightbox>
 
         <section class="home_campaigns_activity">
             <div class="home_campaigns_bg">
@@ -132,11 +136,11 @@
 
     <footer>
         <section class="footer_infos">
-            <div class="footer_logo_box br_break">
-                <a href="#main">
-                    <img class="footer_logo" src="public/images/placeholder_footer_logo.jpg">
+            <!-- <div class="footer_logo_box br_break">
+                <a href="#app">
+                    <img class="footer_logo" src="./public/images/logo_w.svg">
                 </a>
-            </div>
+            </div> -->
     
             <div class="footer_details">
                 <div class="footer_nav">
@@ -150,24 +154,20 @@
                 </div>
     
                 <div class="footer_org_contactInfo">
-                    <div class="footer_logo_box disappear">
-                        <a href="#main">
-                            <img class="footer_logo" src="public/images/placeholder_footer_logo.jpg">
-                        </a>
-                    </div>
-
-                    <div class="footer_socialMedia">
-                        <a href="#"><i class="ri-instagram-fill"></i></a>
-                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                        <a href="#"><i class="ri-twitter-fill"></i></a>
-                        <a href="#"><i class="ri-youtube-fill"></i></a>
-                    </div>
-                    
-                    <div class="footer_contactInfo">
-                        <ul>
-                            <li><p>beabuddy@notabully.com</p></li>
-                            <li><p>+1 519.000.0000</p></li>
-                        </ul>
+                    <div class="footer_contact">
+                        <div class="footer_socialMedia">
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                        </div>
+                        
+                        <div class="footer_contactInfo">
+                            <ul>
+                                <li><p>www.swimandgemerge.com</p></li>
+                                <li><p>+1 519.123.4567</p></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
