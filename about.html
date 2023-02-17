@@ -4,22 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="public/images/logo.svg">
+    <title>Emerge Out From Behind</title>
 </head>
 <body>
     <header>
-
-    </header>
+        <!-- Mobile Menu -->
+        <div class="mobile_nav_bar">
+            <div class="mobile_logo">
+                <a href="./index.html">
+                    <img src="public/images/logo.svg" alt="Main Logo Mobile Page">
+                </a>        
+            </div>
     
-    <main>
+            <div class="mobile tablet">
+                <input type="checkbox" id="overlay-input"/>
+                <label for="overlay-input" id="overlay-button">
+                    <span></span>
+                </label>
+    
+                <div id="overlay">
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./campaign.html">Campaigns</a></li>
+                        <!-- <li><a href="./blog.html">Blog</a></li> -->
+                        <li><a href="#contact_us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Mobile Menu -->
 
+        <!-- PC Nav -->
+        <nav id="mainNav" class="pc">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="public/images/logo.svg" alt="Main Logo">
+                </a>
+            </div>
+
+            <div class="nav_container">
+                <div class="logo_placeholder"></div>
+
+                <div class="navList">
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li class="selected"><a href="./about.html">About Us</a></li>
+                            <li><a href="./campaign.html">Campaigns</a></li>
+                            <!-- <li><a href="./blog.html">Blog</a></li> -->
+                            <li><a href="#contact_us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End PC Nav -->
+    </header>
+
+    <main class="container" id="app">
+        <h1 class="hidden">Bullying In Swimming</h1>
+
+        <div class="about_banner_img">
+            <img src="./public/images/about_banner.jpg">
+        </div>
+
+        <section class="about_banner">
+            <div class="about_banner_textBox">
+                <h2>EMERGE</h2>
+                <div class="sep_line"></div>
+                <p>“ We raise awareness and spark conversation regarding the sport of “Swimming” and the bullying being faced by the people in the sport. “</p>
+            </div>
+        </section>
+
+        <section class="behind_emerge">
+            <h3>Behind <span>‘Emerge’</span></h3>
+            <p>
+                By raising awareness about bullying in swimming, the chance of bullying can be reduced, swimmers can be helped to perform better on the field, and people can be empowered to truly enjoy swimming.
+                <br><br>
+                Our campaign “Emerge” is based on the sport Swimming and bullying existing in the sport. Going by the literal definition, “Emerge” means to begin to exist and to come to an end of a difficult period or experience. And by this campaign we want people in swimming to feel safe.
+                <br><br>
+                Discussing about bullying in swimming, there are lots of ways people are bullied. ​First by the audience, swimming being a lesser known sport & neglecting the efforts of swimmers is a type of bullying. ​There are other cases of bullying as well, some being so severe that free psychotherapy sessions were provided to cope up with the trauma. ​To bring this seriousness out to the world, the campaign Emerge was initiated.
+            </p>
+        </section>
+
+        <div class="empty_space"></div>
+
+        <section class="emerge_vid emerge_vid_ emerge_vid_campaign">
+            <div class="emerge_vid_title">
+                <h2><span class="lightblue_text">Swimming,<br class="br_break break_line"></span> How Much Do You Know?</h2>
+            </div>
+            <video src="./public/video/emerge_video.mp4" controls></video>
+        </section>
+
+        <section class="home_contact" id="contact_us">
+            <div class="homeContact_textBox">
+                <h2>Make Changes With Us!</h2>
+                <p>Would you like to make changes with us? Or, would you like to join us? Let us know!</p>
+                <!-- <button>Contact Us</button> -->
+
+                <div class="contact_socialMedia">
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
+        <section class="footer_infos">
+            <!-- <div class="footer_logo_box br_break">
+                <a href="#app">
+                    <img class="footer_logo" src="./public/images/logo_w.svg">
+                </a>
+            </div> -->
+    
+            <div class="footer_details">
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./campaign.html">Campaigns</a></li>
+                        <!-- <li><a href="./blog.html">Blogs</a></li> -->
+                        <li><a href="#contact_us">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer_org_contactInfo">
+                    <div class="footer_contact">
+                        <div class="footer_socialMedia">
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                        </div>
+                        
+                        <div class="footer_contactInfo">
+                            <ul>
+                                <li><p>www.swimandgemerge.com</p></li>
+                                <li><p>+1 519.123.4567</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <div class="copyright">
+            <p>&copy; XYZ Agency. All right is reserved.</p>
+        </div>
     </footer>
 
+    <!-- vue js library -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="js/main.js" type="module" defer></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="public/js/main.js" type="module" defer></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+// Slide Down Effect
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.bullying_taglines h2,
+.about_banner_textBox h2 {
+    animation: slideDown 1s forwards;
+}
+
+.bullying_taglines p,
+.about_banner_textBox .sep_line {
+    animation: slideDown 1.4s forwards;
+}
+
+.bullying_definition h3,
+.about_banner_textBox p {
+    animation: slideDown 1.6s forwards;
+}
+
+.bullying_definition p,
+.behind_emerge h3 {
+    animation: slideDown 1.8s forwards;
+}
+
+.behind_emerge p {
+    animation: slideDown 2.0s forwards;
+}
