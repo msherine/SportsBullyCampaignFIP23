@@ -1,6 +1,7 @@
 // components always get imported here
 import CampaignActivity from './components/TheCampaignActivity.js';
 import Lightbox from './components/TheLightBoxComponent.js';
+import ArticleThumb from './components/TheArticleThumb.js';
 
 (() => {
     // create vue instance here
@@ -8,10 +9,15 @@ import Lightbox from './components/TheLightBoxComponent.js';
 
     createApp({
         created() {
-            fetch('./data.json') 
-                .then(res => res.json()) 
-                .then(data => this.campaignData = data) 
-            .catch(error => console.error(error)); 
+            // fetch('./data.json') 
+            //     .then(res => res.json()) 
+            //     .then(data => this.campaignData = data) 
+            // .catch(error => console.error(error)); 
+
+            fetch('./scripts/json.php')
+                .then(res => res.json())
+                .then(data => this.campaignData = data)
+            .catch(error => console.error(error));
         },
 
         data() {
@@ -31,7 +37,8 @@ import Lightbox from './components/TheLightBoxComponent.js';
 
         components: {
             campaignactivity: CampaignActivity,
-            lightbox: Lightbox
+            lightbox: Lightbox,
+            articlethumb: ArticleThumb
         }
     }).mount('#app')
 })()

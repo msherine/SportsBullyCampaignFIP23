@@ -2162,3 +2162,68 @@ footer {
         height: 400px !important;
     }
 }
+
+input[type="text"]::placeholder {
+    text-align: left;
+    font-style: italic;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: end;
+}
+
+//regulate padding size and margin-left on mobile
+
+.searchfield {
+    margin: 2em;
+    font-size: 16px;
+    width: 300px;
+    border-radius: 51px;
+    height: 2em;
+    padding-left: 1em;
+}
+
+.articles {
+    margin: 2em 0 5em;
+}
+
+.article {
+    margin: 2em 2em 4em;
+}
+
+.article h2 {
+    margin: 1em 0 0.25em;
+    font-family: 'Anton';
+    color: #184568;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+.articledesc {
+    margin: 1em 2em;
+}
+
+@media only screen and (min-width: 1025px) {
+    .article {
+        display: flex;
+        justify-content: center;
+    }
+
+    .article h2 {
+        font-size: 40px;
+        text-align: left;
+    }
+    
+    .article p {
+    text-align: left;
+    }
+}
+
+.textarticle {
+    margin: 3em;
+}
+
+.textarticle p {
+    text-align: left;
+}
