@@ -9,15 +9,15 @@ import ArticleThumb from './components/TheArticleThumb.js';
 
     createApp({
         created() {
-            // fetch('./data.json') 
-            //     .then(res => res.json()) 
-            //     .then(data => this.campaignData = data) 
-            // .catch(error => console.error(error)); 
+            fetch('./data.json') 
+                .then(res => res.json()) 
+                .then(data => this.campaignData = data) 
+            .catch(error => console.error(error)); 
 
-            fetch('./scripts/json.php')
-                .then(res => res.json())
-                .then(data => this.campaignData = data)
-            .catch(error => console.error(error));
+            // fetch('./scripts/json.php')
+            //     .then(res => res.json())
+            //     .then(data => this.campaignData = data)
+            // .catch(error => console.error(error));
         },
 
         data() {
