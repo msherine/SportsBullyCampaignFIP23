@@ -545,7 +545,8 @@ main {
     }
 
     .textsection {
-        margin: 1rem 30px;
+        padding: 1rem 30px;
+        // width: 100%;
     
         .text_placeholder {
             margin: 1rem 0;
@@ -571,6 +572,8 @@ main {
         }
     
         .textarticle {    
+            // margin: 0 20px;
+
             p {
                 text-align: left;
                 line-height: 24px;
@@ -587,6 +590,7 @@ main {
         
         .article_form {
             margin: 0 auto 80px auto;
+            padding: 0 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -594,14 +598,14 @@ main {
         
             input,
             textarea {
-                min-width: 240px;
-                width: 100%;
+                // min-width: 240px;
+                // width: 100%;
                 padding: 12px 20px;
                 border-radius: 20px;
                 outline: none;
                 border: none;
                 filter: drop-shadow(0 2px 4px #00000020);
-                text-align: center;
+                text-align: left;
         
                 &::placeholder {
                     text-align: left;
@@ -625,6 +629,7 @@ main {
                 color: white;
                 transition: all .2s ease-in;
                 cursor: pointer;
+                text-align: center;
     
                 &:hover {
                     background-color: #76C4D1;

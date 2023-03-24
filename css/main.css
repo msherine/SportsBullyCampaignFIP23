@@ -485,7 +485,7 @@ main .articlepage h2 {
   filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1882352941));
 }
 main .textsection {
-  margin: 1rem 30px;
+  padding: 1rem 30px;
 }
 main .textsection .text_placeholder {
   margin: 1rem 0;
@@ -519,6 +519,7 @@ main .textsection .commenttitle {
 }
 main .textsection .article_form {
   margin: 0 auto 80px auto;
+  padding: 0 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -526,14 +527,12 @@ main .textsection .article_form {
 }
 main .textsection .article_form input,
 main .textsection .article_form textarea {
-  min-width: 240px;
-  width: 100%;
   padding: 12px 20px;
   border-radius: 20px;
   outline: none;
   border: none;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1254901961));
-  text-align: center;
+  text-align: left;
 }
 main .textsection .article_form input::placeholder,
 main .textsection .article_form textarea::placeholder {
@@ -554,6 +553,7 @@ main .textsection .article_form .article_submit_btn input {
   color: white;
   transition: all 0.2s ease-in;
   cursor: pointer;
+  text-align: center;
 }
 main .textsection .article_form .article_submit_btn input:hover {
   background-color: #76C4D1;
