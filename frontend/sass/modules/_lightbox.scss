@@ -1,0 +1,127 @@
+.lightbox {
+    // display: none;
+    width: 100vw;
+    height: 100vh;
+    
+  
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+  
+    background-color: #fff;
+  
+    z-index: 5000;
+}
+
+.lightbox_close { 
+    position: absolute; 
+    left: 85%;
+    cursor: pointer;
+    z-index: 100;
+    color: #e0274b;
+    font-size: 2em;
+    padding: 0.5em;
+    font-family: sans-serif;
+  }
+  
+  .lightbox_close:hover { 
+    opacity: 0.7; 
+  }
+
+  .lightbox img {
+    max-width: 100% !important;
+  }
+  
+  .lightbox article { 
+    display: block;
+    padding: 4em 2em 2em;
+    margin: auto;
+  }
+
+  
+  .lb_text { 
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+    color: #24253d;
+  }
+
+  .lightbox h3 {
+    color: #24253d;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2em;
+  }
+
+  .lightbox h4 {
+    color: #e0274b;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin-top: 2em;
+  }
+
+  .lightbox h5 {
+    color: #24253d;
+    margin-top: 1em;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5em;
+  }
+  
+ .works li {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 8px;
+    text-align: left;
+    overflow: hidden;
+ }
+
+ .lightbox a:hover {
+  text-decoration: none;
+  color: #e0274b;
+ }
+
+ .lightbox a {
+  text-decoration: none;
+  color: #24253d;
+ }
+
+ .image2 {
+  margin: 2em auto;
+ }
+
+ .comment h3 {
+    text-align: start;
+    font-size: 1.25em;
+    margin: 2em 0 0.5em;
+    color: #184568;
+    width: fit-content;
+ }
+
+ .comment p {
+    width: fit-content;
+ }
+
+ .comment {
+    margin-top: 3em;
+ }
+
+ .create-article {
+    margin-top: 20em;
+    margin-left: 5em;
+ }
+
+ .create-article input {
+    margin: 1.5em;
+    font-size: 1.2em;
+ }
+
+.create-article h2 {
+  text-align: left;
+  font-size: 1.5em;
+  font-family: 'Anton';
+  color: #184568;
+ }
+
+
