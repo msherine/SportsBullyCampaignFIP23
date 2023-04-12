@@ -7,7 +7,7 @@ export default {
 
     template: `
     <div class="comment">
-                <h3>{{comment.user}}</h3>
+                <h5>{{comment.user}}</h5>
                 <p>{{comment.content}}</p>
             </div>
     `

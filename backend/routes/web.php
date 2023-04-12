@@ -59,7 +59,7 @@ $router->get('articles/{id}', ['uses' => 'ArticleController@getOneArticle']);
 $router->post('articles', ['uses' => 'ArticleController@createArticle']);
 
 //update
-$router->put('articles/{id}', ['uses' => 'ArticleController@updateArticle']);
+$router->post('articles/{id}', ['uses' => 'ArticleController@updateArticle']);
 
 //delete
 $router->delete('articles/{id}', ['uses' => 'ArticleController@deleteArticle']);

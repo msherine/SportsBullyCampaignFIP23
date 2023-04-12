@@ -86,11 +86,6 @@
             </div>
         </section>
 
-        <section class="searchbar">
-            <input class="searchfield" type="text" placeholder="Search...">
-            <input type="submit" value="Go!" class="btn-search">
-        </section>
-
         <section class="articles">
             <articlethumb @loadlbdata="loadLightbox" v-for="article in articleData" :article="article"></articlethumb>
         </section>

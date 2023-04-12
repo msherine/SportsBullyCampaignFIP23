@@ -2192,7 +2192,7 @@ input[type="text"]::placeholder {
 }
 
 .articles {
-    margin: 2em 0 5em;
+    margin: 8em 0 5em;
 }
 
 .article {
@@ -2261,6 +2261,21 @@ input[type="text"]::placeholder {
         height: 15em;
     }
 
+    .comment {
+        background-color: #F7F7FB;
+    max-width: 794px;
+    padding: 1em;
+    margin: 2em 0;
+    }
+
+    .comment h5 {
+        text-align: start;
+        font-weight: 600;
+        margin-top: 0 !important;
+        margin-bottom: 0.5em;
+        color: #184568 !important;
+     }
+
     .textarticle textarea {
         width: 50em;
     }
@@ -2315,3 +2330,4 @@ textarea {
     border-radius: 57px;
     border: 0;
 }
+

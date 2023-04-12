@@ -12,11 +12,11 @@ class CommentController extends Controller
 {
     public function getAllComments() {
         //Book::all();
-        return response()->json(Comment::join('articles', 'article_id', '=', 'articles.id')->select('user', 'content', 'title', 'article_desc')->get());
+        return response()->json(Comment::join('articles', 'article_id', '=', 'articles.id')->select('user', 'content', 'title', 'article_desc', 'article_id', 'comments.created_at', 'comments.id')->get());
     }
 
     public function getOneComment($id) {
-        return response()->json(Comment::join('articles', 'article_id', '=', 'articles.id')->select('user', 'content', 'title', 'article_desc')->find($id));
+        return response()->json(Comment::join('articles', 'article_id', '=', 'articles.id')->select('user', 'content', 'title', 'article_desc', 'article_id', 'comments.created_at', 'comments.id')->find($id));
     }
 
     public function createComment(Request $request) {

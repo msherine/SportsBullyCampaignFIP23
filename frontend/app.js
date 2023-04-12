@@ -24,9 +24,11 @@ app.get('/article1', (req, res) => {
     res.sendFile(__dirname + '/views/article1.html');
 })
 
-app.get('/edit', (req, res) => {
-    res.sendFile(__dirname + '/views/editarticle.html');
-})
+app.get('/articles/edit/:id', (req, res) => {
+    const articleId = req.params.id;
+    
+  });
+  
 
 app.listen(port, ()=> {
     console.log(`app is running on ${port}`);

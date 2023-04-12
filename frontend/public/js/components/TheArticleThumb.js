@@ -9,7 +9,7 @@ export default {
 
     template: `
     <div class="article" @click="loadLBData">
-    <img :src='"images/" + article.article_img' alt="img">
+    <img :src='"http://localhost:8000/images/" + article.article_img' alt="img">
         <div class="articledesc">
             <h2>{{article.title}}</h2>
             <p>
