@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <title>Emerge Out From Behind</title>
+</head>
+<body>
+    <header>
+        <!-- Mobile Menu -->
+        <div class="mobile_nav_bar">
+            <div class="mobile_logo">
+                <a href="./index.html">
+                    <img src="images/logo.svg" alt="Main Logo Mobile Page">
+                </a>        
+            </div>
+    
+            <div class="mobile tablet">
+                <input type="checkbox" id="overlay-input"/>
+                <label for="overlay-input" id="overlay-button">
+                    <span></span>
+                </label>
+    
+                <div id="overlay">
+                    <ul>
+                        <li><a class="active" href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./campaign.html">Campaigns</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="#contact_us">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Mobile Menu -->
+
+        <!-- PC Nav -->
+        <nav id="mainNav" class="pc">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="images/logo.svg" alt="Main Logo">
+                </a>
+            </div>
+
+            <div class="nav_container">
+                <div class="logo_placeholder"></div>
+
+                <div class="navList">
+                    <div>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About Us</a></li>
+                            <li><a href="./campaign.html">Campaigns</a></li>
+                            <li class="selected"><a href="./blog.html">Blog</a></li>
+                            <li><a href="#contact_us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End PC Nav -->
+    </header>
+
+    <main class="container" id="app">
+        <h1 class="hidden">Bullying In Swimming</h1>
+
+        <section class="campaign_banner">
+            <h2 class="hidden">Bullying In Swimming Banner</h2>
+
+            <div class="campaign_banner_img">
+                <img src="images/article1_big.jpg" alt="campaign banner image">
+            </div>
+
+            <div class="banner_textBox">
+                <div class="bullying_taglines  articlepage">
+                    <h2>
+                        <span class="heading_text_span1">Don’t Let Bullying Ruin Your Child’s Swimming Lessons</span><br>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="textsection">
+            <h2 class="hidden">Text of the Article</h2>
+            <div class="textarticle">
+                <p>
+                    Swimming is a valuable skill that not only provides health benefits but can also be a fun activity for children. However, like any other sport or activity, it is not immune to bullying. Bullying in swimming can occur in various forms, including physical, verbal, or emotional abuse, and it can have long-term negative effects on a child’s self-esteem and confidence. In this article, we will discuss ways to protect a child from being bullied in swimming lessons.<br><br>
+                    
+                    1. Teach your child to recognize and report bullying.
+                    One of the most important things you can do to protect your child from bullying is to teach them how to recognize it and report it. Talk to your child about what bullying is and how it can manifest itself in swimming lessons. Encourage your child to come to you or a trusted adult if they feel uncomfortable or threatened in any way. It is important to emphasize that reporting bullying is not tattling but a necessary step to stop the behavior and keep your child safe.<br><br>
+
+                    2. Establish open communication with the swim instructor.
+                    It is crucial to establish a good relationship with the swim instructor to ensure that they are aware of the potential for bullying and are taking steps to prevent it. Reach out to the instructor before the lessons begin to discuss your child’s needs and any concerns you may have. Ask the instructor what their bullying prevention policy is, and how they handle incidents of bullying. Be sure to ask about their training and experience working with children and how they handle challenging behavior. It is important to feel confident in the instructor’s ability to maintain a safe and positive learning environment for your child.<br><br>
+
+                    3. Attend swimming lessons with your child.
+                    One way to protect your child from bullying is to attend swimming lessons with them. This not only allows you to observe the class and the interactions between the children, but it also sends a message to your child that you are there to support and protect them. By being present, you can also interact with other parents and children and observe their behavior. This can give you insight into any potential issues and allow you to address them with the instructor or other parents.<br><br>
+
+                    4. Encourage positive relationships with other children.
+                    Encourage your child to develop positive relationships with their peers in swimming lessons. Help them to understand the importance of treating others with respect and kindness and modeling appropriate behavior. Encourage your child to be inclusive and friendly, and to stand up for others if they see them being bullied. This can help to create a positive and supportive environment and can prevent bullying from occurring.<br><br>
+
+                    5. Build your child's self-esteem and confidence.
+                    Bullying can have a significant impact on a child's self-esteem and confidence. Building your child's self-esteem and confidence can help them to be more resilient in the face of bullying. Encourage your child to participate in activities outside of swimming, such as sports or music, where they can develop skills and talents. Praise your child for their efforts and accomplishments, and encourage them to set goals and work towards them. Help your child to develop a positive self-image and to understand that their worth is not determined by the opinions of others.<br><br>
+
+                    In conclusion, if your child is experiencing bullying in swimming lessons, it is important to take action immediately. By working together with the swim instructor, other parents, and the swim school administration, you can create a safe and supportive environment for all children. It is essential to teach your child to recognize and report bullying, encourage positive relationships with other children, and build their self-esteem and confidence. With these efforts, you can protect your child from being bullied in swimming lessons and ensure that they have a positive and enjoyable experience learning to swim.
+                </p>
+
+            <h2 class="commenttitle">Leave a comment</h2>
+            <form method="post" action="http://localhost:8000/comments">
+                <input name="user" id="user" type="text" placeholder="Username">
+                <input type="hidden" name="article_id" id="article_id" value="1">
+                <textarea name="content" id="content" placeholder="Your message..."></textarea>
+                <input type="submit">
+            </form>
+            </div>
+            <div class="comments">
+                <div></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer_infos">
+            <!--<div class="footer_logo_box br_break">
+                <a href="#main">
+                    <img class="footer_logo" src="./public/images/placeholder_footer_logo.jpg">
+                </a>
+            </div>-->
+    
+            <div class="footer_details">
+                <div class="footer_nav">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./campaign.html">Campaigns</a></li>
+                        <li><a href="./blog.html">Blogs</a></li>
+                        <li><a href="#contact_us">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer_org_contactInfo">
+                    <!--<div class="footer_logo_box disappear">
+                        <a href="#main">
+                            <img class="footer_logo" src="./public/images/placeholder_footer_logo.jpg">
+                        </a>
+                    </div>-->
+
+                    <div class="footer_socialMedia">
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-youtube-fill"></i></a>
+                    </div>
+                    
+                    <div class="footer_contactInfo">
+                        <ul>
+                            <li><p>beabuddy@notabully.com</p></li>
+                            <li><p>+1 519.000.0000</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="copyright">
+            <p>&copy; XYZ Agency. All right is reserved.</p>
+        </div>
+    </footer>
+
+    <!-- vue js library -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>

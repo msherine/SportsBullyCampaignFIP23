@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Document</title>
+    
+
+</head>
+<body>
+    <h2 class="hidden">EMERGE Journal</h2>
+    <main id="app">
+        <header>
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+        </header>
+
+    <div class="content">
+        <!--<div class="sidebar">
+            <div class="links">
+                <a><h2>Articles</h2></a>
+                <a><h2>Comments</h2></a>
+            </div>
+            
+        </div>-->
+        <div class="table">
+            <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr v-for="article in articleData">
+                        <td>{{ article.id }}</td>
+                        <td>{{ article.title }}</td>
+                        <td><button class="update" @click="editArticle(article.id)">Update</button></td>
+                        <td><button class="delete" @click="deleteArticle(article.id)">Delete</button></td>
+                    </tr>
+                    </table>
+        </div>
+        <div class="form create">
+            <h2>Create Article</h2>
+                <form id="create-form" method="post" action="http://localhost:8000/articles"  enctype="multipart/form-data">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="article_desc">Description:</label>
+                <input id="article_desc" name="article_desc" required></input>
+                <label for="article_img">Thumbnail Image:</label>
+                <input type="file" name="article_img" id="article_img" required>
+                <label for="img_big">Hero Image:</label>
+                <input type="file" name="img_big" id="img_big" required>
+                <textarea name="text" id="text" required></textarea>
+                <input type="submit" value="Save">
+        </form>
+        </div>
+    </div>
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.tiny.cloud/1/kzqf8n2ukrp8yysoo2wjo3oau72d5zssnyb5va4vg6d8ceit/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+      <script>
+        tinymce.init({
+          selector: '#text',
+          plugins: 'autoresize',
+          menubar: false,
+          toolbar: 'undo redo | formatselect | bold italic underline | alignleft aligncenter alignright | bullist numlist outdent indent | link',
+          autoresize_bottom_margin: 10,
+          autoresize_max_height: 500,
+          autoresize_min_height: 200
+        });
+      </script>
+    <script src="js/main.js" type="module" defer></script>
+    
+</body>
+</html>
