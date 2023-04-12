@@ -1,0 +1,240 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Lato';
+}
+
+header {
+    background-color: #002D4D;
+    padding: 1.5em 0 1.5em 2em;
+}
+
+.logo img {
+    width: 150px;
+}
+
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.template {
+    display: flex;
+}
+
+table {
+    width: 70%;
+    text-align: left;
+    margin: 2em auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+table td {
+    word-wrap: break-word;
+    font-family: 'Lato';
+    font-weight: 400;
+    padding: 1em;
+    
+}
+
+th {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 1em;
+    background-color: #F7F7FB;
+}
+
+tr {
+    background-color: #F7F7FB;
+}
+
+
+.update {
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    background-color: #76C4D1;
+    border: 0;
+    color: #fff;
+}
+
+.delete {
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    background-color: #B63330;
+    border: 0;
+    color: #fff;
+}
+
+.row {
+    margin: 1em 0;
+    background-color: #76C4D1;
+}
+
+h2 {
+    font-family: 'Anton';
+}
+
+.sidebar {
+    height: 100vh;
+    background-color: #1C1C1C;
+    color: #fff;
+
+}
+
+.sidebar h2 {
+    font-family: 'Lato';
+    margin: 2em 0;
+}
+
+// .content {
+//     display: grid;
+//     grid-template-columns: 1fr 4fr;
+// }
+
+.links {
+    margin: 3em;
+}
+
+a:hover {
+    color: #76C4D1;
+}
+
+ .container {
+    margin: 0 6em;
+ }
+
+ .form {
+    margin: 2em 0;
+ }
+
+ .form h2 {
+    font-size: 3em;
+    color: #002D4D;
+    margin: 1em 0 0.8em;
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+ }
+
+ input {
+    margin: 1em 0;
+    max-width: 25em;
+    padding: 1em;
+    border: 1px solid #184568;
+    text-align: left;
+    height: auto;
+ }
+
+ #article_desc {
+    max-width: 40em;
+ }
+
+ .create-form, .edit-form textarea {
+    height: 10em;
+    margin: 1em 0;
+    max-width: 50em;
+    min-height: 25em;
+}
+
+input[type="submit"] {
+    color: #184568;
+    font-weight: 700;
+    font-size: 1.25em;
+    padding: 0.5em 3em;
+    width: fit-content;
+    background-color: #A9D4DF;
+    border-radius: 25px;
+    border: 0;
+}
+
+input[type="file"] {
+    border: 0;
+    padding: 0;
+}
+
+.comment {
+    background-color: #F7F7FB;
+    max-width: 794px;
+    padding: 1em;
+    margin: 2em 0;
+ }
+
+ .comment h3 {
+    text-align: start;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #184568;
+ }
+
+ .comhead {
+    display: flex;
+    justify-content: space-between;
+ }
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.create {
+    margin: 2em auto;
+}
+
+.create form {
+    width: 50em;
+}
+
+.btns {
+    margin: 1em 0;
+}
+
+.btns button {
+    margin-right: 1em;
+}
+
+.edit {
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    background-color: #76C4D1;
+    border: 0;
+    color: #fff;
+}
+
+.commentEdit {
+    width: 30em;
+}
+
+.editing button {
+    border-radius: 10px;
+    border: 0;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+.save {
+    background-color: #002D4D;
+}
+
+.cancel {
+    background-color: #B63330;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 4em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
