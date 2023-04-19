@@ -26,18 +26,9 @@ Route::options('/{any:.*}', [function (){
 //localhost:8000 
 $router->get('/', function () use ($router) {
     //return $router->app->version();
-    return view('index');
+    return $router->app->version();
 });
 
-$router->get('/blog', function () use ($router) {
-    //return $router->app->version();
-    return view('blog');
-});
-
-$router->get('/article', function () use ($router) {
-    //return $router->app->version();
-    return view('article');
-});
 //localhost:8000/books/1
 $router->get('comments', ['uses' => 'CommentController@getAllComments']);
 
